@@ -14,7 +14,7 @@
 
 <!-- Add Header -->
 <div id="header">
-    <h1>Crystal Number Matching Game</h1>
+    <h2>Crystal Number Matching Game</h2>
 </div>
 
 <!--*********************************************************************************************************
@@ -22,7 +22,7 @@
      Create class to get the number to match   
 *********************************************************************************************************-->
     <div class="matchNum">
-        <h2>Your Number to Match</h2>
+        <h3>Your Number to Match</h3>
          <span>randNumtoMatch</span>
     </div>
 
@@ -38,16 +38,28 @@
     <span>id="numLoss"</span>
 </div>
 
-<!-- * Each crystal should have a random hidden value between 1 - 12. -->
-<!-- When the player clicks on a crystal, it will add a specific amount of points to the player's total score.  -->
-<!-- * Your game will hide this amount until the player clicks a crystal. -->
-<!-- * When they do click one, update the player's score counter. -->
-<!-- * The player wins if their total score matches the random number from the beginning of the game. -->
-<!-- * The player loses if their score goes above the random number. -->
-<!-- * The game restarts whenever the player wins or loses. -->
-<!-- * When the game begins again, the player should see a new random number. Also, all the crystals will have four new hidden values. Of course, the user's score (and score counter) will reset to zero. -->
-<!-- * The app should show the number of games the player wins and loses. To that end, do not refresh the page as a means to restart the game. -->
+<!--*********************************************************************************************************
+    Create a class for the crystals. Each crystal will have a random single value
+*********************************************************************************************************-->
+<div class="crystals">
+    <img scr="assets/images/Crystal1.png" class=crystalImage id="One" alt="Red Crystal">
+    <img scr="assets/images/Crystal2.png" class=crystalImage id="One" alt="Red Crystal">
+    <img scr="assets/images/Crystal3.png" class=crystalImage id="One" alt="Red Crystal">
+    <img scr="assets/images/Crystal4.png" class=crystalImage id="One" alt="Red Crystal">
+</div> 
 
+<!--*********************************************************************************************************
+    Create a class for the user totals. Each crystal will have a random single value that this class will
+    keep a running total
+*********************************************************************************************************-->
+
+<div class="running Total">
+    <h3>The total Score of your play is: 
+        <span>id="runTotal"</span>
+    </h3>
+</div>
+
+<script type="text/javascript" src="assets/javascript/javascript.js"></script>
 
 </body>
 
