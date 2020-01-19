@@ -1,5 +1,12 @@
 // These are my personal NOTES for this project. 
 
+// Added the click event for to show game instructions
+// Click once to show the instructions - click a second time to hide 
+// the instructions
+$('#show').click(function() {
+  $('.menu').toggle("slide");
+});
+
     //I Googled to better understand how to code this.
     // Selects a random number to be shown at the start of the game
     // Number should be should be between 19 - 120
@@ -36,7 +43,7 @@
         num4= Math.floor(Math.random()*11+1);
         userTotal= 0;
         $('#runTotal').text(userTotal);
-        $('#randNumtoMatch').text(Random);
+        $('#randNumtoMatch').text(Random); 
         } 
   
   //adds the wins to the userTotal
