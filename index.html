@@ -4,19 +4,37 @@
     <meta lang="en">;
 <head>
     <meta charset="UTF-8">;
-    <title>Crystal Guess Game</title>
+    <title>Veggie Guess Game</title>
     <link ref="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    
-    
 
 </head>
 
 <body>
+    <!-- Added "Instructions" section for my game -->
+    <div id="show">Click for instructions on how you play the game</div>
+    <div class="menu" style="display: none;">
+        <ol>
+            <li>You will be given a random number at the start of the game.<span>"Your number to match"</span></li>
+            <li>There are four awesome veggies below.</li>
+            <ul>
+                <li id="omato-dribbble">Tomato</li>
+                <li id="workout_carrot">Carrot</li>
+                <li id="Cucumber">Cucumber</li>
+                <li id="eggplant_">Eggplant</li>
+            </ul>
+            <li>By clicking on a Veggie, you will add a specific amount of points to your total score.</li>
+            <li>You win the game by matching your total score to the random number.</li>
+            <li>You lose the game if your total score goes above the random number.</li>
+            <li>The value of each Veggie is hidden from you until you click on it.</li>
+            <li>Each time when the game starts, the game will change the values of each Veggie.</li>
+            <li><b><em>And remember "Veggies rule.....Crystals Drool!"</em></b></li>
+        </ol>
+ </div>
 
 <!-- Add Header -->
 <div id="header">
-    <h2>Crystal Number Matching Game</h2>
+    <h2>Veggie Number Matching Game</h2>
 </div>
 
 <!--*********************************************************************************************************
@@ -24,8 +42,9 @@
      Create class to get the number to match   
 *********************************************************************************************************-->
     <div class="matchNum">
-        <h3>Your Number to Match</h3>
-         <span>randNumtoMatch</span>
+        <h3>Your Number to Match:  
+         <span id = "randNumtoMatch"></span>
+        </h3>
     </div>
 
 <!--*********************************************************************************************************
@@ -33,21 +52,30 @@
     the number to match then Wins. Otherwise, Losses.
 *********************************************************************************************************-->
 <div class="userWins">
-    <span> id="numWins"</span>    
+    <h2>Wins: 
+        <span id="numWins"></span>
+    </h2>      
 </div>
 
 <div class="userLoss">
-    <span>id="numLoss"</span>
+    <h2>Losses: 
+        <span id="numLoss"></span>
+    </h2>
 </div>
 
 <!--*********************************************************************************************************
     Create a class for the crystals. Each crystal will have a random single value
 *********************************************************************************************************-->
 <div class="crystals">
-    <img src="assets/images/Crystal1.png" class=crystalImage id="One" alt="Red Crystal">
-    <img src="assets/images/Crystal2.png" class=crystalImage id="Two" alt="Blue Crystal">
-    <img src="assets/images/Crystal3.png" class=crystalImage id="Three" alt="Orange Crystal">
-    <img src="assets/images/Crystal4.png" class=crystalImage id="Four" alt="Green Crystal">
+    <!-- <img src="assets/images/Crystal1.png" class=crystalImage id="one" alt="Red Crystal"> -->
+    <!-- <img src="assets/images/Crystal2.png" class="crystalImage" id="two" alt="Blue Crystal"> -->
+    <!-- <img src="assets/images/Crystal3.png" class="crystalImage" id="three" alt="Orange Crystal"> -->
+    <!-- <img src="assets/images/Crystal4.png" class="crystalImage" id="four" alt="Green Crystal"> -->
+
+    <img src="assets/images/tomato-dribbble.gif" class=crystalImage id="one" alt="Tomato with Attitude">
+    <img src="assets/images/workout_carrot.gif" class="crystalImage" id="two" alt="Workout Carrot">
+    <img src="assets/images/Cucumber.gif" class="crystalImage" id="three" alt="Dancing Cucumber">
+    <img src="assets/images/eggplant_.gif" class="crystalImage" id="four" alt="Flying Eggplants">
 </div> 
 
 <!--*********************************************************************************************************
@@ -56,7 +84,7 @@
 *********************************************************************************************************-->
 <div class="running Total">
     <h3>The total Score of your play is: 
-        <span>id="runTotal"</span>
+        <span id="runTotal"></span>
     </h3>
 </div>
 
