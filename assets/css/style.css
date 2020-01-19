@@ -3,8 +3,10 @@ body {
     background-color: lightgrey;
   }
 
-
-h5 {
-
-    font-weight: bold;
+#one,
+#two,
+#three,
+#four{
+    width: 330px;
+    height: 330px;
 }
