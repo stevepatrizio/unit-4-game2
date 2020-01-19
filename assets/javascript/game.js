@@ -28,7 +28,7 @@
   //resets the game
   function reset(){
         Random=Math.floor(Math.random()*101+19);
-        console.log(Random)
+        console.log("This is my new reset value: " + Random)
         $('#randomNumber').text(Random);
         num1= Math.floor(Math.random()*11+1);
         num2= Math.floor(Math.random()*11+1);
@@ -36,6 +36,7 @@
         num4= Math.floor(Math.random()*11+1);
         userTotal= 0;
         $('#runTotal').text(userTotal);
+        $('#randNumtoMatch').text(Random);
         } 
   
   //adds the wins to the userTotal
@@ -50,13 +51,13 @@
   alert ("You lose!");
     losses++;
     $('#numLoss').text(losses);
-    reset()
+    reset();
   }
   
   //sets up click for jewels
     $('#one').on ('click', function(){
       userTotal = userTotal + num1;
-      console.log("New userTotal= " + userTotal);
+      console.log("userTotal= " + userTotal);
       $('#runTotal').text(userTotal); 
         //sets win/lose conditions
         if (userTotal == Random){
