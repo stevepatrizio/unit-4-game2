@@ -4,91 +4,150 @@
     <meta lang="en">;
 <head>
     <meta charset="UTF-8">;
-    <title>Veggie Guess Game</title>
+    <title>Crystal Collector Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link ref="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
 </head>
 
 <body>
-    <!-- Added "Instructions" section for my game -->
-    <div id="show">Click for instructions on how you play the game</div>
-    <div class="menu" style="display: none;">
-        <ol>
-            <li>You will be given a random number at the start of the game.<span>"Your number to match"</span></li>
-            <li>There are four awesome veggies below.</li>
-            <ul>
-                <li id="omato-dribbble">Tomato</li>
-                <li id="workout_carrot">Carrot</li>
-                <li id="Cucumber">Cucumber</li>
-                <li id="eggplant_">Eggplant</li>
-            </ul>
-            <li>By clicking on a Veggie, you will add a specific amount of points to your total score.</li>
-            <li>You win the game by matching your total score to the random number.</li>
-            <li>You lose the game if your total score goes above the random number.</li>
-            <li>The value of each Veggie is hidden from you until you click on it.</li>
-            <li>Each time when the game starts, the game will change the values of each Veggie.</li>
-            <li><b><em>And remember "Veggies rule.....Crystals Drool!"</em></b></li>
-        </ol>
- </div>
+    
+<header>
+    <div class="container">
+            <!-- Added "Instructions" section for my game -->
+            <div id="show">Click for instructions on how you play the game</div>
+            <div class="menu" style="display: none;">
+                <ol>
+                    <li>You will be given a random number at the start of the game.<span>"Your number to match"</span></li>
+                    <li>There are four awesome veggies below.</li>
+                    <ul>
+                        <li id="omato-dribbble">Tomato</li>
+                        <li id="workout_carrot">Carrot</li>
+                        <li id="Cucumber">Cucumber</li>
+                        <li id="eggplant_">Eggplant</li>
+                    </ul>
+                    <li>By clicking on a Veggie, you will add a specific amount of points to your total score.</li>
+                    <li>You win the game by matching your total score to the random number.</li>
+                    <li>You lose the game if your total score exceeds the random number value.</li>
+                    <li>The value of each Veggie is hidden from you until you click on it.</li>
+                    <li>Each time when the game starts, the game will change the values of each Veggie.</li>
+                    <li><b><em>And remember "Veggies rule.....Crystals Drool!"</em></b></li>
+                </ol>
+            </div>
+    </div>
+</header>
+
 
 <!-- Add Header -->
-<div id="header">
-    <h2>Veggie Number Matching Game</h2>
-</div>
+<section>
+
+    <div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <div id="header">
+                <!-- <h4>Veggie Number Matching Game</h4> -->
+                Veggie Number Matching Game
+            </div>
+        </div>
+    </div>    
 
 <!--*********************************************************************************************************
     The random number shown at the start of the game should be between 19 - 120. 
      Create class to get the number to match   
 *********************************************************************************************************-->
-    <div class="matchNum">
-        <h3>Your Number to Match:  
-         <span id = "randNumtoMatch"></span>
-        </h3>
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="matchNum">
+                <!-- <h5>Your Number to Match:   -->
+                Your Number to Match:  
+                <span id = "randNumtoMatch"></span>
+                <!-- </h5> -->
+            </div>
+        </div>
     </div>
 
 <!--*********************************************************************************************************
     Create Class/ID's to track correct and incorrect number matches. If number of crystal clicks equals 
     the number to match then Wins. Otherwise, Losses.
 *********************************************************************************************************-->
-<div class="userWins">
-    <h2>Wins: 
-        <span id="numWins"></span>
-    </h2>      
-</div>
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="userWins">
+                <!-- <h5>Wins:  -->
+                    Wins: 
+                    <span id="numWins"></span>
+                <!-- </h5>       -->
+            </div>
+        </div>
+    </div>
 
-<div class="userLoss">
-    <h2>Losses: 
-        <span id="numLoss"></span>
-    </h2>
-</div>
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="userLoss">
+                <!-- <h5>Losses:  -->
+                    Losses: 
+                    <span id="numLoss"></span>
+                <!-- </h5> -->
+            </div>
+        </div>
+    </div>
 
 <!--*********************************************************************************************************
     Create a class for the crystals. Each crystal will have a random single value
 *********************************************************************************************************-->
 <div class="crystals">
-    <img src="assets/images/tomato-dribbble.gif" class=crystalImage id="one" alt="Tomato with Attitude">
-    <img src="assets/images/workout_carrot.gif" class="crystalImage" id="two" alt="Workout Carrot">
-    <img src="assets/images/Cucumber.gif" class="crystalImage" id="three" alt="Dancing Cucumber">
-    <img src="assets/images/eggplant_.gif" class="crystalImage" id="four" alt="Flying Eggplants">
+    <div class="row">
+        <div class="col-sm-3">
+            <div class="vegimg">
+                <img src="assets/images/tomato-dribbble.gif" class=crystalImage id="one" alt="Tomato with Attitude">
+            </div>
+        </div>
+    
+        <div class="col-sm-3">
+            <div class="vegimg">
+                <img src="assets/images/workout_carrot.gif" class="crystalImage" id="two" alt="Workout Carrot">
+            </div>
+        </div>
+    
+        <div class="col-sm-3">
+            <div class="vegimg">
+                <img src="assets/images/Cucumber.gif" class="crystalImage" id="three" alt="Dancing Cucumber">
+            </div>
+        </div>
+    
+        <div class="col-sm-3">
+            <div class="vegimg">
+                <img src="assets/images/eggplant_.gif" class="crystalImage" id="four" alt="Flying Eggplants">
+            </div>
+        </div>
+    </div>
 </div> 
 
 <!--*********************************************************************************************************
     Create a class for the user totals. Each crystal will have a random single value that this class will
     keep a running total
 *********************************************************************************************************-->
-<div class="running Total">
-    <h3>The total Score of your play is: 
-        <span id="runTotal"></span>
-    </h3>
+<div class="row">
+    <div class="col-sm-12">
+        <div class="running Total">
+            <h5>The total Score of your play is: 
+                <span id="runTotal"></span>
+            </h5>
+        </div>
+    </div>
 </div>
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript" src="assets/javascript/game.js"></script>
 
+</div>
+
+</section>
+
 </body>
-
-
 </html>
 
 

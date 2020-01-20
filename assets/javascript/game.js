@@ -46,14 +46,14 @@ $('#show').click(function() {
         $('#randNumtoMatch').text(Random); 
         } 
   
-  //adds the wins to the userTotal
+  //Adds the wins to the numWins
   function myWins(){
   alert("You won!");
     wins++; 
     $('#numWins').text(wins);
     reset();
   }
-  //Adds the losses to the userTotal
+  //Adds the losses to the numLoss
   function loser(){
   alert ("You lose!");
     losses++;
@@ -61,7 +61,7 @@ $('#show').click(function() {
     reset();
   }
   
-  //sets up click for jewels
+  //sets up click for my awesome veggies
     $('#one').on ('click', function(){
       userTotal = userTotal + num1;
       console.log("userTotal= " + userTotal);
