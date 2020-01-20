@@ -34,21 +34,21 @@
                     <li>You lose the game if your total score exceeds the random number value.</li>
                     <li>The value of each Veggie is hidden from you until you click on it.</li>
                     <li>Each time when the game starts, the game will change the values of each Veggie.</li>
-                    <li><b><em>And remember "Veggies rule.....Crystals Drool!"</em></b></li>
+                    <li><b><em>And remember "Veggies rule!"</em></b></li>
                 </ol>
             </div>
     </div>
+</div>
+
 </header>
 
 
-<!-- Add Header -->
-<section>
+<div id="main-container" class="container">
+<section class="main-container">
 
-    <div class="container">
     <div class="row">
         <div class="col-sm-12">
             <div id="header">
-                <!-- <h4>Veggie Number Matching Game</h4> -->
                 Veggie Number Matching Game
             </div>
         </div>
@@ -61,10 +61,8 @@
     <div class="row">
         <div class="col-sm-12">
             <div class="matchNum">
-                <!-- <h5>Your Number to Match:   -->
                 Your Number to Match:  
                 <span id = "randNumtoMatch"></span>
-                <!-- </h5> -->
             </div>
         </div>
     </div>
@@ -76,10 +74,8 @@
     <div class="row">
         <div class="col-sm-12">
             <div class="userWins">
-                <!-- <h5>Wins:  -->
                     Wins: 
                     <span id="numWins"></span>
-                <!-- </h5>       -->
             </div>
         </div>
     </div>
@@ -87,39 +83,37 @@
     <div class="row">
         <div class="col-sm-12">
             <div class="userLoss">
-                <!-- <h5>Losses:  -->
                     Losses: 
                     <span id="numLoss"></span>
-                <!-- </h5> -->
             </div>
         </div>
     </div>
 
 <!--*********************************************************************************************************
-    Create a class for the crystals. Each crystal will have a random single value
+    Create a class for the Veggies. Each veggie will have a random single value
 *********************************************************************************************************-->
 <div class="crystals">
-    <div class="row">
+    <div class="row no-gutters">
         <div class="col-sm-3">
-            <div class="vegimg">
-                <img src="assets/images/tomato-dribbble.gif" class=crystalImage id="one" alt="Tomato with Attitude">
+            <div class="vegimg img-fluid zoom">
+                <img src="assets/images/tomato-dribbble.gif" class="crystalImage" id="one" alt="Tomato with Attitude">
             </div>
         </div>
     
         <div class="col-sm-3">
-            <div class="vegimg">
+            <div class="vegimg img-fluid zoom">
                 <img src="assets/images/workout_carrot.gif" class="crystalImage" id="two" alt="Workout Carrot">
             </div>
         </div>
     
         <div class="col-sm-3">
-            <div class="vegimg">
+            <div class="vegimg img-fluid zoom">
                 <img src="assets/images/Cucumber.gif" class="crystalImage" id="three" alt="Dancing Cucumber">
             </div>
         </div>
     
         <div class="col-sm-3">
-            <div class="vegimg">
+            <div class="vegimg img-fluid zoom">
                 <img src="assets/images/eggplant_.gif" class="crystalImage" id="four" alt="Flying Eggplants">
             </div>
         </div>
@@ -146,6 +140,7 @@
 </div>
 
 </section>
+</div>
 
 </body>
 </html>
