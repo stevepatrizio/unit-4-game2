@@ -1,12 +1,84 @@
-
 body {
-    background-color: lightgrey;
+  width: 100%;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 12px;
   }
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  clear: both;
+}
+
+#header{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+
+.matchNum,
+.userWins,
+.userLoss{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
 
 #one,
 #two,
 #three,
 #four{
-    width: 330px;
-    height: 330px;
+    float: left;
+    width: 200px;
+    height: 200px;
+    overflow: auto;
 }
+
+/* Media queries - max width = 980px */
+@media screen and (max-width: 980px){
+
+  .container{
+   width: 100%;
+   padding: 20px;
+ }
+
+ .main-section{
+   max-width: 950px;
+   margin-top: 20px;
+ }
+
+}
+
+/* Media queries - max width = 768px */
+@media screen and (max-width: 768px){
+
+ .container{
+  width: 100%;
+  padding: 20px;
+}
+
+.main-section{
+  max-width: 650px;
+  margin-top: 20px;
+}
+
+}
+
+
+/* Media queries - max width = 640px */
+@media screen and (max-width: 640px){
+
+ .container{
+  width: 100%;
+}
+
+.crystals{
+  position: static;
+  max-width: 550px;
+}
+
+}
+
