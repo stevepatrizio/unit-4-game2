@@ -10,7 +10,7 @@ body {
 
 .container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1024px;
   margin: 0 auto;
   clear: both;
 }
@@ -32,53 +32,16 @@ body {
 #three,
 #four{
     float: left;
-    width: 200px;
-    height: 200px;
+    width: 220px;
+    height: 220px;
+    padding-right: 20px;
     overflow: auto;
 }
 
-/* Media queries - max width = 980px */
-@media screen and (max-width: 980px){
-
-  .container{
-   width: 100%;
-   padding: 20px;
- }
-
- .main-section{
-   max-width: 950px;
-   margin-top: 20px;
- }
-
-}
-
-/* Media queries - max width = 768px */
-@media screen and (max-width: 768px){
-
- .container{
-  width: 100%;
+.vegimg{
   padding: 20px;
 }
 
-.main-section{
-  max-width: 650px;
-  margin-top: 20px;
-}
-
-}
-
-
-/* Media queries - max width = 640px */
-@media screen and (max-width: 640px){
-
- .container{
-  width: 100%;
-}
-
 .crystals{
-  position: static;
-  max-width: 550px;
+  padding: 20px;
 }
-
-}
-
