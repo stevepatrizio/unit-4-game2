@@ -5,6 +5,7 @@
 <head>
     <meta charset="UTF-8">;
     <title>Crystal Collector Game</title>
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -14,11 +15,11 @@
 </head>
 
 <body>
-    
+
 <header>
     <div class="container">
             <!-- Added "Instructions" section for my game -->
-            <div id="show">Click for instructions on how you play the game</div>
+            <div id="show"><b><em>Click for instructions on how you play the game</em></b></div>
             <div class="menu" style="display: none;">
                 <ol>
                     <li>You will be given a random number at the start of the game.<span>"Your number to match"</span></li>
@@ -43,7 +44,7 @@
 </header>
 
 
-<div id="main-container" class="container">
+<div id="main-cont" class="container">
 <section class="main-container">
 
     <div class="row">
@@ -92,28 +93,28 @@
 <!--*********************************************************************************************************
     Create a class for the Veggies. Each veggie will have a random single value
 *********************************************************************************************************-->
-<div class="crystals">
+<div class="Veggie">
     <div class="row no-gutters">
         <div class="col-sm-3">
-            <div class="vegimg img-fluid zoom">
+            <div class="vegimg img-fluid">
                 <img src="assets/images/tomato-dribbble.gif" class="crystalImage" id="one" alt="Tomato with Attitude">
             </div>
         </div>
     
         <div class="col-sm-3">
-            <div class="vegimg img-fluid zoom">
+            <div class="vegimg img-fluid">
                 <img src="assets/images/workout_carrot.gif" class="crystalImage" id="two" alt="Workout Carrot">
             </div>
         </div>
     
         <div class="col-sm-3">
-            <div class="vegimg img-fluid zoom">
+            <div class="vegimg img-fluid">
                 <img src="assets/images/Cucumber.gif" class="crystalImage" id="three" alt="Dancing Cucumber">
             </div>
         </div>
     
         <div class="col-sm-3">
-            <div class="vegimg img-fluid zoom">
+            <div class="vegimg img-fluid">
                 <img src="assets/images/eggplant_.gif" class="crystalImage" id="four" alt="Flying Eggplants">
             </div>
         </div>
@@ -126,10 +127,9 @@
 *********************************************************************************************************-->
 <div class="row">
     <div class="col-sm-12">
-        <div class="running Total">
-            <h5>The total Score of your play is: 
+        <div id="runningTotal">
+            The total Score of your play is: 
                 <span id="runTotal"></span>
-            </h5>
         </div>
     </div>
 </div>
