@@ -7,16 +7,15 @@ $('#show').click(function() {
   $('.menu').toggle("slide");
 });
 
-    //I Googled to better understand how to code this.
-    // Selects a random number to be shown at the start of the game
+    // Selects a random number to be matched at the start of the game
     // Number should be should be between 19 - 120
     var Random=Math.floor(Math.random()*101+19)
     
-    // Appending random number to the randomNumber id in the html doc
+    // Append Random number to the randomNumber id in the html doc
     $('#randNumtoMatch').text(Random);
     
     
-    // Set random numbers for each jewel
+    // Set random number variables for each Veggie
     // Random number has to be between 1 - 12
     var num1= Math.floor(Math.random()*11+1);
     var num2= Math.floor(Math.random()*11+1);
@@ -24,19 +23,19 @@ $('#show').click(function() {
     var num4= Math.floor(Math.random()*11+1);
     
     
-    //  Decaring variables for totals
+    // Decaring variables for totals
     var userTotal= 0; 
     var wins= 0;
     var losses = 0;
-    
+  
+  // Append Wins/Losses number to the numWins/numLoss id in the html doc
   $('#numWins').text(wins);
   $('#numLoss').text(losses);
 
   //resets the game
   function reset(){
         Random=Math.floor(Math.random()*101+19);
-        console.log("This is my new reset value: " + Random)
-        $('#randomNumber').text(Random);
+        // console.log("This is my new reset value: " + Random)
         num1= Math.floor(Math.random()*11+1);
         num2= Math.floor(Math.random()*11+1);
         num3= Math.floor(Math.random()*11+1);
@@ -64,7 +63,7 @@ $('#show').click(function() {
   //sets up click for my awesome veggies
     $('#one').on ('click', function(){
       userTotal = userTotal + num1;
-      console.log("userTotal= " + userTotal);
+      // console.log("userTotal= " + userTotal);
       $('#runTotal').text(userTotal); 
         //sets win/lose conditions
         if (userTotal == Random){
@@ -77,7 +76,7 @@ $('#show').click(function() {
   
     $('#two').on ('click', function(){
       userTotal = userTotal + num2;
-      console.log("New userTotal= " + userTotal);
+      // console.log("New userTotal= " + userTotal);
       //sets win/loss conditions
       $('#runTotal').text(userTotal); 
         if (userTotal == Random){
@@ -90,7 +89,7 @@ $('#show').click(function() {
   
     $('#three').on ('click', function(){
       userTotal = userTotal + num3;
-      console.log("New userTotal= " + userTotal);
+      // console.log("New userTotal= " + userTotal);
       //sets win/loss conditions
       $('#runTotal').text(userTotal);
         if (userTotal == Random){
@@ -103,7 +102,7 @@ $('#show').click(function() {
   
     $('#four').on ('click', function(){
       userTotal = userTotal + num4;
-      console.log("New userTotal= " + userTotal);
+      // console.log("New userTotal= " + userTotal);
       $('#runTotal').text(userTotal); 
         //sets win/loss conditions          
         if (userTotal == Random){
